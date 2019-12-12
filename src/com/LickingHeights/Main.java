@@ -5,14 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
         int size = 10;
-        int lowestNumber = 0;
-        int highestNumber = 10;
+        int lowestNumber = 80;
+        int highestNumber = 90;
 
 
               int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-
-        Pattern5();
+              System.out.println("The sum of the array is "+sum(array));
 
     }
 
@@ -95,7 +94,18 @@ public class Main {
                 }
                 System.out.println();
             }
+        }
+
+            public static int sum(int[] array){
+                int sum = 0;
+
+                for(int i=0; i<array.length; i++ ){
+                    sum += array [i];
+
+                }
+                return sum;
+            }
 
 
         }
-    }
+
